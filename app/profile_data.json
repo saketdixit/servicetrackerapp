@@ -1,0 +1,39 @@
+{
+    "name": "Saket",
+    "user_id": 1,
+    "services" : 
+    [
+        {
+        "id" : 1,
+        "name" : "Bharti",
+        "type" : "Maid",
+        "tasks" : [{
+            "dusting" : 50,
+            "mopping" : 50,
+            "sweeping": 50
+            }],
+        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq" : 1
+        },
+        {
+        "id" : 2,
+        "name" : "Ashok",
+        "type" : "Milkman",
+        "tasks" : [{
+            "delivery" : 300
+            }],
+        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq" : 1
+        },
+        {
+        "id" : 3,
+        "name" : "Hari",
+        "type" : "Newspaper",
+        "tasks" : [{
+                "delivery" : 100
+            }],
+        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq" : 1
+        }
+    ]
+}
