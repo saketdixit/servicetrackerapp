@@ -1,39 +1,159 @@
 {
     "name": "Saket",
     "user_id": 1,
-    "services" : 
-    [
-        {
-        "id" : 1,
-        "name" : "Bharti",
-        "type" : "Maid",
-        "tasks" : [{
-            "dusting" : 50,
-            "mopping" : 50,
-            "sweeping": 50
-            }],
-        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
-        "pay_freq" : 1
-        },
-        {
-        "id" : 2,
-        "name" : "Ashok",
-        "type" : "Milkman",
-        "tasks" : [{
-            "delivery" : 300
-            }],
-        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
-        "pay_freq" : 1
-        },
-        {
-        "id" : 3,
-        "name" : "Hari",
-        "type" : "Newspaper",
-        "tasks" : [{
-                "delivery" : 100
-            }],
-        "image" : "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
-        "pay_freq" : 1
-        }
+    "services": [
+      {
+        "id": 1,
+        "name": "Bharti",
+        "type": "Maid",
+        "tasks": [
+          {
+            "name": "Dusting",
+            "compensation": 50,
+            "schedule": [
+              "Monday",
+              "Wednesday",
+              "Friday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-01",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-03",
+                "attendance": 0
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          },
+          {
+            "name": "Mopping",
+            "compensation": 50,
+            "schedule": [
+              "Tuesday",
+              "Thursday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-02",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-04",
+                "attendance": 0
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          }
+        ],
+        "image": "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq": 1
+      },
+      {
+        "id": 2,
+        "name": "Ashok",
+        "type": "Delivery",
+        "tasks": [
+          {
+            "name": "Milk",
+            "compensation": 50,
+            "schedule": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-01",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-02",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-03",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-04",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-05",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-06",
+                "attendance": 1
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          }
+        ],
+        "image": "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq": 1
+      },
+      {
+        "id": 3,
+        "name": "Hari",
+        "type": "Delivery",
+        "tasks": [
+          {
+            "name": "Newspaper",
+            "compensation": 20,
+            "schedule": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-01",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-02",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-03",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-04",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-05",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-06",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-07",
+                "attendance": 0
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          }
+        ],
+        "image": "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq": 1
+      }
     ]
-}
+  }

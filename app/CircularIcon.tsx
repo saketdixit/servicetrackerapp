@@ -27,21 +27,37 @@ const CircularIcon: React.FC<{ source: ImageSource, ver: number }> = ({ source, 
         borderRadius: 100 / 2, // Maintain half of width/height for circle
         backgroundColor: '#ccc', // Optional background color
         overflow: 'hidden', // Clip content within the circle
-      }
+    },
+    tabBtn: {
+      width: 40,
+      height: 40,
+      borderRadius: 40 / 2,
+      backgroundColor: '#ccc',
+      overflow: 'hidden'
+    }
   });
 
-  if(ver == 1)
-  return (
-    <View style={styles.container}>
-      <Image source={source} style={styles.image} />
-    </View>
-  );
-  else
-  return (
-  <View style={styles.gridIcon}>
-    <Image source={source} style={styles.image} />
-  </View>
+  if(ver == 1) {
+    return (
+      <View style={styles.container}>
+        <Image source={source} style={styles.image} />
+      </View>
     );
+  }
+  else if(ver == 0) {
+    return (
+      <View style={styles.tabBtn}>
+        <Image source={source} style={styles.image} />
+      </View>
+    );
+  }
+  else {
+    return (
+      <View style={styles.gridIcon}>
+        <Image source={source} style={styles.image} />
+      </View>
+    );
+  }
 };
 
 export default CircularIcon;

@@ -1,3 +1,4 @@
+import './gesture-handler';
 import 'react-native-gesture-handler';
 import React, { useEffect, useState }  from "react";
 
@@ -7,7 +8,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import MyDrawer from "./Drawer";
 import CalendarButton from './CalendarButton';
 import { NavigationContainer } from '@react-navigation/native';
-import profile_data_json from "./profile_data.json"
+import profile_data_json from "./profile_data1.json"
 
 import { ProfileData } from './types';
 

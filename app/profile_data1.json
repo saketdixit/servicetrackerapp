@@ -1,0 +1,56 @@
+{
+    "name": "Saket",
+    "user_id": 1,
+    "services": [
+      {
+        "id": 1,
+        "name": "Bharti",
+        "type": "Maid",
+        "tasks": [
+          {
+            "name": "Dusting",
+            "compensation": 50,
+            "schedule": [
+              "Monday",
+              "Wednesday",
+              "Friday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-01",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-03",
+                "attendance": 0
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          },
+          {
+            "name": "Mopping",
+            "compensation": 50,
+            "schedule": [
+              "Tuesday",
+              "Thursday"
+            ],
+            "completedHistory": [
+              {
+                "date": "2024-05-02",
+                "attendance": 1
+              },
+              {
+                "date": "2024-05-04",
+                "attendance": 0
+              }
+            ],
+            "paymentFrequency": "weekly",
+            "isPaid": true
+          }
+        ],
+        "image": "C:/Windows/System32/AwesomeProject/assets/images/splash.png",
+        "pay_freq": 1
+      }
+    ]
+}

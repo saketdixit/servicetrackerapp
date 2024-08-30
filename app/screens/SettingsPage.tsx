@@ -2,11 +2,11 @@ import React from "react";
 
 import { View, Text, Button, ScrollView, StyleSheet } from 'react-native'
 import type { DrawerScreenProps } from "@react-navigation/drawer";
-import { RootDrawerParamList } from "../types";
+import { DrawerParamList } from "../types";
 
-type Props = DrawerScreenProps<RootDrawerParamList, 'Settings' >;
+type SettingsProps = DrawerScreenProps<DrawerParamList, 'Settings' >;
 
-export const SettingsScreen = ({ navigation }: Props) => {
+export const SettingsScreen = ({ navigation , route}: SettingsProps) => {
     return(
       <View style = {styles.label}>
         <Text> Settings </Text>

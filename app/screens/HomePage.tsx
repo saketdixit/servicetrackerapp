@@ -2,26 +2,17 @@ import React from "react";
 
 import { View, Text, Button, ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
 import type { DrawerScreenProps } from "@react-navigation/drawer";
-import { RootDrawerParamList } from "../types";
+import { DrawerParamList } from "../types";
 import CircularIcon from "../CircularIcon";
 import MyScreen from "../grids";
-type Props = DrawerScreenProps<RootDrawerParamList, 'Home' >;
+import MyBottomTab from "../BottomTabHome";
+type HomeProps = DrawerScreenProps<DrawerParamList, 'Home' >;
 
-export const HomePageScreen = ({ navigation }: Props) => {
-    const Addbtn = require("C:/Windows/System32/AwesomeProject/assets/images/Addbtn.png");
-    const placeholder = require("C:/Windows/System32/AwesomeProject/assets/images/react-logo.png")
+export const HomePageScreen = ({ navigation , route }: HomeProps) => {
     return(
-        <View style = {styles.label}>
-            <View style = {styles.title}>
-                <CircularIcon source={placeholder} ver = {1}/>
-            </View>
-            <View style= {styles.scrollscreen}>
-                <MyScreen/>
-            </View>
-            <View style = {styles.addbuttonview}>
-                <CircularIcon source={Addbtn} ver = {1}/>
-            </View>
-        </View>
+        <>
+            <MyBottomTab />
+        </>
       );
 }
 

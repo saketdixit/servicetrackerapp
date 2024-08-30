@@ -2,14 +2,14 @@ import {View, Text, Image, ScrollView, TextInput, StyleSheet, Button, ImageBackg
 //import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import type { DrawerScreenProps } from '@react-navigation/drawer';
-import { RootDrawerParamList } from "./types";
+import { DrawerParamList } from "./types";
 import { HomePageScreen } from "./screens/HomePage";
 import { ProfileScreen } from "./screens/ProfilePage";
 import { SettingsScreen } from "./screens/SettingsPage";
 import { LogoutScreen } from "./screens/LoginPage";
 import { CalendarScreen } from "./screens/CalendarPage";
 
-const DrawerN = createDrawerNavigator<RootDrawerParamList>();
+const DrawerN = createDrawerNavigator<DrawerParamList>();
 
 export default function MyDrawer()  {
   return (
@@ -18,8 +18,8 @@ export default function MyDrawer()  {
     <DrawerN.Screen name="Profile" component={ProfileScreen} />
     <DrawerN.Screen name="Settings" component={SettingsScreen} />
     <DrawerN.Screen name="Logout" component={LogoutScreen} />
-    <DrawerN.Screen name="Calendar" component={CalendarScreen}/>
   </DrawerN.Navigator>
+    //<DrawerN.Screen name="Calendar" component={CalendarScreen}/>
   );
 }
 
